@@ -1,0 +1,30 @@
+:root {
+    --cor-azul-claro: #48c5ce;
+    --cor-branca: #fff;
+    --cor-fundo-escuro: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: var(--cor-fundo-escuro);
+}
+
+.cabecalho {
+    background-color: var(--cor-azul-claro);
+    max-width: 924px;
+    margin: 0 auto;
+}
+
+.cabecalho__titulo {
+    color: var(--cor-branca);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 0.8rem;
+}

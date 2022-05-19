@@ -2,6 +2,7 @@
     --cor-azul-claro: #48c5ce;
     --cor-branca: #fff;
     --cor-fundo-escuro: #000;
+    --cor-fundo-form: #ffffffbb;
 }
 
 * {
@@ -27,4 +28,68 @@ body {
     text-align: center;
     font-size: 1.6rem;
     padding: 0.8rem;
+}
+
+main {
+    max-width: 924px;
+    margin: 0 auto;
+}
+
+.container {
+    background-image: url('../img/people.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container__form {
+    background-color: var(--cor-fundo-form);
+    max-width: 230px;
+    padding: 1.2rem;
+    margin: 1.2rem;
+    border-radius: 0.2rem;
+}
+
+.container__form-titulo {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.container__form-paragrafo {
+    margin: 0.8rem 0;
+}
+
+.container__form-form-campos {
+    width: 100%;
+    padding: 0.4rem;
+    border: none;
+    margin-bottom: 0.5rem;
+    border-radius: 0.2rem;
+}
+
+.container__form-form-select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url('../img/arrow.jpg');
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 10px);
+    background-position-y: center;
+}
+
+.container__form-form-botao {
+    background-color: var(--cor-azul-claro);
+    text-transform: uppercase;
+    color: var(--cor-branca);
+    font-weight: bold;
+    border: 1px solid var(--cor-azul-claro);
+}
+
+.container__form-form-botao:hover {
+    background-color: var(--cor-fundo-form);
+    border: 1px solid var(--cor-azul-claro);
+    color: var(--cor-azul-claro);
 }

@@ -3,6 +3,7 @@
     --cor-branca: #fff;
     --cor-fundo-escuro: #000;
     --cor-fundo-form: #ffffffbb;
+    --cor-fundo-palestrante: #202121;
 }
 
 * {
@@ -92,4 +93,32 @@ main {
     background-color: var(--cor-fundo-form);
     border: 1px solid var(--cor-azul-claro);
     color: var(--cor-azul-claro);
+}
+
+.palestrante {
+    background-color: var(--cor-fundo-palestrante);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 3rem 0;
+}
+
+.palestrante .palestrante__img {
+    width: 160px;
+    margin-left: 0.5rem;
+}
+
+.palestrante .palestrante__conteudo {
+    color: var(--cor-branca);
+    max-width: 300px;
+    margin-left: 3rem;
+    margin-right: 0.5rem;
+}
+
+.palestrante .palestrante__conteudo .palestrante__conteudo-titulo {
+    font-size: 1.2rem;
+}
+
+.palestrante .palestrante__conteudo .palestrante__conteudo-paragrafo {
+    margin: 0.8rem 0;
 }

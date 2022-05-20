@@ -123,6 +123,24 @@ main {
     margin: 0.8rem 0;
 }
 
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.footer__texto {
+    color: var(--cor-branca);
+    font-size: 0.8rem;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: var(--cor-azul-claro)
+}
+
 @media screen and (max-width: 523px) {
     .palestrante .palestrante__conteudo {
         margin-top: 0.5rem;
